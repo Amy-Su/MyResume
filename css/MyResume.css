@@ -45,6 +45,8 @@
    
     .table_info {    margin: 50px 0;
     }
+	.caption h2 {margin-top:5%;
+    }
 }
 @media screen and (max-width: 414px) {
     .col-xs-3 {
@@ -55,8 +57,7 @@
         width: 100%;
     }
    
-    .caption h2 {margin-top:25px
-    }
+    
 }
 .col-xs-3 {
     margin-top: 80px;
@@ -191,13 +192,14 @@ span {
 
     .practice a .caption {
         display: none;
-        background-color: rgba(64, 64, 64, 0.6);
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        text-align: center;
+            background-color: #fff;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    opacity: 0.5;
     }
 
     .practice a.practice_hover .caption {
