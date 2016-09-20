@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="jquery-1.7.2.js"></script>
+    <title></title>
+
+</head>
+<body>
+
+     <div class="news_scroll">
+        <ul>
+            <li class="item">
+                <a href="#" target="_blank">高速限行首日，车牌注意单双号
+                   <span>2016.8.29</span>
+                </a>
+                <a class="more_news" href="#" target="_blank">更多新闻
+                </a>
+            </li>
+            <li class="item">
+                <a href="#" target="_blank">G20峰会特稿：发展新理念传递中国决心
+                   <span>2016.8.29</span>
+                </a>
+                <a class="more_news" href="#" target="_blank">更多新闻
+                </a>
+            </li>
+            <li class="item">
+                <a href="#" target="_blank">习近平对中国航空发动机集团公司成立作出重要指示
+                   <span>2016.8.29</span>
+                </a>
+                <a class="more_news" href="#" target="_blank">更多新闻
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: #333;
+            font-family: "微软雅黑";
+        }
+
+        .news_scroll {
+            min-width: 650px;
+            height: 50px;
+            margin: 0 auto;
+            font-size: 14px;
+            overflow: hidden;
+        }
+
+        .item {
+            height: 50px;
+            line-height: 50px;
+            margin-left: 50px;
+            list-style: none;
+        }
+
+            .item a {
+                color: #2e2e57;
+                font-weight: bold;
+            }
+
+                .item a:hover {
+                    color: red;
+                }
+
+            .item span {
+                color: #6c6c6c;
+                padding-left: 30px;
+                font-weight: normal;
+            }
+
+            .item .more_news {
+                padding: 8px 15px;
+                margin-left: 20px;
+                border: 1px solid #d1d1d1;
+                border-radius: 25px;
+                background: #dfe0e4;
+            }
+
+                .item .more_news :hover {
+                    background: #f63b2e;
+                    color: #fff;
+                }
+    </style>
+    <script>
+        var new_scroll = setInterval(scroll, 2000);//可按照指定的周期（以毫秒计）来调用函数或计算表达式
+        function scroll() {
+            $(".news_scroll ul").animate(
+                { marginTop: "-50px" }, 500, function () {     //marginTop50px之后发生此函数
+                    $(this).css({ marginTop: '0px' }).find('li:first').appendTo(this);  //将ul的marginTop值设置为0px,并搜索第一个<li>元素，将这个元素添加到ul元素后面
+                })
+        }
+    </script>
+</body>
+</html>

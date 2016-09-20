@@ -1,0 +1,1771 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>网上超市一号店</title>
+    <script src="js/jquery-1.7.2.js"></script>
+    <script src="js/yihaodian.js"></script>
+    <link href="css/yihaodian.css" rel="stylesheet" />
+</head>
+<body>
+    <!--头部-->
+    <div class="hd_header_wrap">
+        <div class="hd_global_top_bar">
+            <div class="wrap clearfix">
+                <div class="hd_topbar_left clearfix">
+                    <div class="hd_unlogin_warp">
+                        <div class="hd_login clearfix">
+                            <span class="hd_hi">Hi,</span>
+                            请<a class="blue_link" href="#">&nbsp;登录&nbsp;</a>/<a class="blue_link" href="#">&nbsp;注册</a>
+                        </div>
+                        <!-- 鼠标移入登录/注册显示-->
+                        <div class="hd_user_center">
+                            <div class="clearfix">
+                                <div class="fl">
+                                    <a href="#" class="hd_avata_box"></a>
+                                </div>
+                                <div class="hd_growth_box">
+                                    <a class="hd_vip_earn">会员专享价，V3免费购</a>
+                                    <p class="hd_my_yhd">
+                                        <a href="#">欢迎进入我的1号店</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="hd_message">
+                                <a href="#">积分</a>
+                                <a href="#">勋章</a>
+                            </div>
+
+                        </div>
+                        <em class="hd_login_arrow"></em>
+                    </div>
+                    <div class="hd_indxProvce">
+                        <span>送货至</span>
+                        <a class="hd_header_province_name">江苏</a>
+                        <!--鼠标移入送货至显示-->
+                        <div class="hd_provincelist">
+                            <dl class="hd_hot_city clearfix">
+                                <dt>热门省市
+                                </dt>
+                                <dd><a href="#">上海</a></dd>
+                                <dd><a href="#">北京</a></dd>
+                                <dd><a href="#">广州</a></dd>
+                                <dd><a href="#">湖北</a></dd>
+                                <dd><a href="#">四川</a></dd>
+                            </dl>
+                            <div class="hd_province_detail clearfix">
+                                <dl class="clearfix">
+                                    <dt>华北：</dt>
+                                    <dd><a href="#">北京</a></dd>
+                                    <dd><a href="#">天津</a></dd>
+                                    <dd><a href="#">河北</a></dd>
+                                    <dd><a href="#">山西</a></dd>
+                                    <dd><a href="#">内蒙古</a></dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>华东：</dt>
+                                    <dd><a href="#">上海</a></dd>
+                                    <dd><a href="#">江苏</a></dd>
+                                    <dd><a href="#">浙江</a></dd>
+                                    <dd><a href="#">安徽</a></dd>
+                                    <dd><a href="#">福建</a></dd>
+                                    <dd><a href="#">山东</a></dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>华南：</dt>
+                                    <dd><a href="#">广东</a></dd>
+                                    <dd><a href="#">广西</a></dd>
+                                    <dd><a href="#">海南</a></dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>华中：</dt>
+                                    <dd><a href="#">江西</a></dd>
+                                    <dd><a href="#">河南</a></dd>
+                                    <dd><a href="#">湖北</a></dd>
+                                    <dd><a href="#">湖南</a></dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>西南：</dt>
+                                    <dd><a href="#">重庆</a></dd>
+                                    <dd><a href="#">四川</a></dd>
+                                    <dd><a href="#">贵州</a></dd>
+                                    <dd><a href="#">云南</a></dd>
+                                    <dd><a href="#">西藏</a></dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>西北：</dt>
+                                    <dd><a href="#">陕西</a></dd>
+                                    <dd><a href="#">甘肃</a></dd>
+                                    <dd><a href="#">青海</a></dd>
+                                    <dd><a href="#">宁夏</a></dd>
+                                    <dd><a href="#">新疆</a></dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>东北：</dt>
+                                    <dd><a href="#">辽宁</a></dd>
+                                    <dd><a href="#">吉林</a></dd>
+                                    <dd><a href="#">黑龙江</a></dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hd_top_manu clearfix">
+                    <ul class="clearfix">
+                        <li class="hd_menu_tit">
+                            <a class="hd_menu">我的一号店</a>
+                            <!--    鼠标滑过我的一号店显示-->
+                            <div class="hd_menu_list">
+                                <ul>
+                                    <li><a href="#">我的订单</a></li>
+                                    <li><a href="#">我的积分</a></li>
+                                    <li><a href="#">我的红包</a></li>
+                                    <li><a href="#">我的抵用券</a></li>
+                                    <li><a href="#">我的评论</a></li>
+                                    <li><a href="#">会员专享</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hd_menu_tit">
+                            <a class="hd_menu">收藏夹</a>
+                            <div class="hd_menu_list">
+                                <ul>
+                                    <li><a href="#">商品收藏</a></li>
+                                    <li><a href="#">店铺收藏</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hd_menu_tit">
+                            <a class="hd_menu">
+                                <i class="hd_mobile_icon"></i>掌上1号店</a>
+                            <!-- 鼠标滑过掌上1号店显示-->
+                            <div class="hd_mobile_show">
+                                <i></i>
+                                <div class="hd_mobile_list clearfix">
+                                    <div class="hd_mobile_content">
+                                        <img src="images/ChEbu1WRDpOAf6xxAAAz2LgGaek47900_93x93.webp.jpg" />
+                                    </div>
+                                    <dl class="hd_mobile_tab">
+                                        <dt>
+                                            <b>掌上1号店</b>
+                                        </dt>
+                                        <dd>
+                                            <a href="#" class="blue_link">手机购物更优惠</a>
+                                        </dd>
+                                        <dd>
+                                            <a href="#" class="hd_iconfont">&#xe6d6</a>
+                                            <a href="#" class="hd_iconfont">&#xe601</a>
+                                            <a href="#" class="hd_iconfont">&#xe617</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hd_menu_tit">
+                            <a class="hd_menu">客户服务</a>
+                            <div class="hd_menu_list">
+                                <ul>
+                                    <li><a href="#">包裹跟踪</a></li>
+                                    <li><a href="#">包裹跟踪</a></li>
+                                    <li><a href="#">在线退换货</a></li>
+                                    <li><a href="#">在线投诉</a></li>
+                                    <li><a href="#">配送范围</a></li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="hd_menu_tit">
+                            <a class="hd_menu">网站导航</a>
+                            <!-- 鼠标滑过网站导航显示-->
+                            <div class="hd_site_nav">
+                                <em></em>
+                                <ul class="clearfix">
+                                    <li><a href="#">一号商城</a></li>
+                                </ul>
+                                <ul class="clearfix">
+                                    <li><a href="#">一号社区</a></li>
+                                    <li><a href="#">0元试用</a></li>
+                                    <li><a href="#">平安金卡</a></li>
+                                    <li><a href="#">分销平台</a></li>
+                                </ul>
+                                <ul class="clearfix">
+                                    <li><a href="#">网站联盟</a></li>
+                                    <li><a href="#">招商通道</a></li>
+                                    <li><a href="#">企业采购</a></li>
+                                </ul>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <span class="hd_follow_us">关注我们： </span>
+                    <a href="#" class=" hd_sina_weibo " title="去关注1号店的新浪微博"></a>
+                    <a href="#" class="hd_weixin" title="关注1号店微信">
+                        
+                        <div class="hd_weixin_show">
+                            <i></i>
+                            <p>
+                                扫描二维码<br />
+                                关注一号店微信
+                            </p>
+                            <img src="images/yhd_QRCode.jpg" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrap index_topbanner">
+            <a href="#">
+                <img src="images/title_big_adviert.jpg" /></a>
+        </div>
+        <div class="wrap hd_special_logo clearfix">
+            <div class="hd_logo_area">
+                <a href="#">
+                    <img src="images/yhd_big_logo.png" /></a>
+            </div>
+            <div class="hd_head_search">
+                <div class="hd_search_form ">
+                    <div class="hd_search_tab" id="hdSearchTab" tab="1">
+                        <a href="#" tab="1">商品</a>
+                        <a href="#" tab="2">店铺</a>
+                        <i></i>
+                    </div>
+                    <div class="hd_search_wrap ">
+                        <input class="hd_input_test" name="keyword" type="text" placeholder="五折狂欢 满199减100送100" />
+                        <button type="button" class="hd_search_btn">搜索</button>
+                    </div>
+                </div>
+                <p class="hd_hot_search ">
+                    <a href="#">洗衣液</a>
+                    <a href="#">连衣裙</a>
+                    <a href="#">花生油</a>
+                    <a href="#">华为p9</a>
+                    <a href="#">良品铺子</a>
+                    <a href="#">面包</a>
+                    <a href="#">蜂蜜</a>
+                    <a href="#">拖把</a>
+                    <a href="#">iphone6s</a>
+                    <a href="#">大米</a>
+                </p>
+            </div>
+            <div class="hd_prism_wrap">
+                <div class="hd_prism">
+                    <a href="#" class="hd_prism_tab">
+                        <em class="icon icon_welfare"></em>
+                        <p>福利</p>
+                        <i></i>
+                    </a>
+                </div>
+                <div class="hd_prism">
+                    <a href="#" class="hd_prism_tab">
+                        <em class="icon icon_order"></em>
+                        <p>订单查询</p>
+                        <i></i>
+                    </a>
+                </div>
+                <div class="hd_mini_cart">
+                    <i class="hd_c_arow"></i>
+                    <a href="#" class="hd_prism_cart">
+                        <em></em>购物车
+                    </a>
+                    <!--     鼠标移入购物车显示-->
+                    <div class="hd_cart_show">
+                        <div class="hd_login_tips">
+                            <p>登录才能看得到购物车里的商品哦~</p>
+                            <a href="#">登录</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="hd_header_nav">
+            <div class="wrap clearfix">
+                <div class="allSortOuterbox">
+                    <div class="hd_all_sort_link">
+                        <a href="#">所有商品分类</a>
+                    </div>
+                    <div class="hd_allsort_out_box_new">
+                        <div class="hd_allsort_out">
+                            <ul class="hd_allsort">
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe622</i>
+                                        <a href="#">进口食品</a>、
+                                         <a href="#">生鲜</a>、
+                                         <a href="#">海购</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                        <div class="hd_sort_list_wrap clearfix">
+                                            <div class="hd_sort_list ">
+                                                <dl class="clearfix">
+                                                    <dt>
+                                                        <a href="#">礼品/购物</a>
+                                                        <em>/</em>
+                                                        <a href="#">鲜花速递</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">购物券</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">超市卡</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">手机充值</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">体验卡</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">玫瑰</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">康乃馨</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">生日</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">商务</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl class="clearfix">
+                                                    <dt>
+                                                        <a href="#">页游</a>
+
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">边锋斗地主</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">剑雨江湖</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">足球掌门</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">琅琊榜</a>
+                                                    </dd>
+
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="#">为你定制</a>
+
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">蔓越莓控</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">蓝莓控</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">日本零食赏</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">五毛零食</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">风味啤酒</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">夏日茶香</a>
+                                                    </dd>
+
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="#">科技图书</a>
+
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">科普读物</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">计算机网络</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">医学</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">工业技术</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">建筑</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">自然科学</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">农业林业</a>
+                                                    </dd>
+
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="#">文艺图书</a>
+                                                        <em>/</em>
+                                                        <a href="#">生活图书</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">小说</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">文学</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">传记</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">青春文学</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">动漫幽默</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">两性</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">孕期</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">育儿</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">亲子</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">保健</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">运动</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">休闲</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">旅游</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">美食</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">时尚</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">风水</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">手工</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="#">童书</a>
+                                                        <em>/</em>
+                                                        <a href="#">教育图书</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">儿童文学</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">卡通益智</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">图画书</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">低幼启蒙</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">中小学教辅</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">外语</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">考试</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">工具书</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="#">人文社科图书</a>
+                                                        <em>/</em>
+                                                        <a href="#">经管励志图书</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">哲学/宗教</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">历史</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">政治军事</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">文化</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">法律</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">经济</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">管理</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">投资理财</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="#">音像/报刊/原版图书</a>
+
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">音乐</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">进口图书</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">教育影视</a>
+                                                    </dd>
+
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="#">健康速食</a>
+
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">女士佳酒</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">爱咖啡的近</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">海鲜焗饭</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">牛排大餐</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">七天减肥餐</a>
+                                                    </dd>
+
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="#">优选</a>
+
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">韩国部队锅</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">吐司面包DIY</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">餐具美学</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">自制小零食</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">低脂低卡放心吃</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">韩国甜品</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">美味蛋糕</a>
+                                                    </dd>
+
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="#">送女士</a>
+                                                        <em>/</em>
+                                                        <a href="#">送男士</a>
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">不染不烫凹造型</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">型男养成</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">美容利器</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">中国风餐具</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">家庭保健</a>
+                                                    </dd>
+
+                                                </dl>
+                                                <dl>
+                                                    <dt>
+                                                        <a href="#">上班族</a>
+
+                                                    </dt>
+                                                    <dd>
+                                                        <a href="#">加班者联盟</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">OL速成妆</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">绿色办公</a>
+                                                    </dd>
+                                                    <dd>
+                                                        <a href="#">萌萌哒口粮</a>
+                                                    </dd>
+
+                                                </dl>
+                                            </div>
+                                            <div class="hd_sort_spot clearfix">
+                                                <ul>
+                                                    <li class="spot_item">
+                                                        <a href="#">
+                                                            <div class="hd_spot_tit">
+                                                                <b>进口粮油品类中心</b>
+                                                                <p>健康好品质</p>
+                                                            </div>
+                                                            <img src="images/ChEbulcHR86AdKmfAAAVze1n2s438300.jpg" />
+                                                        </a>
+                                                    </li>
+                                                    <li class="spot_item">
+                                                        <a href="#">
+                                                            <div class="hd_spot_tit">
+                                                                <b>金秋温情一券搞定</b>
+                                                                <p>大闸蟹买十送一</p>
+                                                            </div>
+                                                            <img src="images/CgQIz1egbKuAc4zPAAA6yHJENrM21400.jpg" />
+                                                        </a>
+                                                    </li>
+                                                    <li class="spot_item">
+                                                        <a href="#">
+                                                            <div class="hd_spot_tit">
+                                                                <b>进口水饮品类中心</b>
+                                                                <p>进口高端水</p>
+                                                            </div>
+                                                            <img src="images/goods3.jpg" />
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe688</i>
+                                        <a href="#">食品</a>、
+                                         <a href="#">饮料</a>、
+                                         <a href="#">酒</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe69b</i>
+                                        <a href="#">母婴</a>、
+                                         <a href="#">玩具</a>、
+                                         <a href="#">童装</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe60b</i>
+                                        <a href="#">厨卫清洁</a>、
+                                         <a href="#">纸</a>、
+                                         <a href="#">清洁剂</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe61b</i>
+                                        <a href="#">家居</a>、
+                                         <a href="#">家装</a>、
+                                         <a href="#">宠物</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xf0034</i>
+                                        <a href="#">美妆</a>、
+                                         <a href="#">个人护理</a>、
+                                         <a href="#">洗护</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe6b8</i>
+                                        <a href="#">女装内衣</a>、
+                                         <a href="#">男装</a>、
+                                         <a href="#">珠宝</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe832</i>
+                                        <a href="#">箱包</a>、
+                                         <a href="#">鞋靴</a>、
+                                         <a href="#">运动户外</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe610</i>
+                                        <a href="#">手机</a>、
+                                         <a href="#">数码</a>、
+                                         <a href="#">电脑办公</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe610</i>
+                                        <a href="#">大家电</a>、
+                                         <a href="#">小家电</a>、
+                                         <a href="#">汽车</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+
+                                </li>
+
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe629</i>
+                                        <a href="#">保健滋补</a>、
+                                         <a href="#">医药</a>、
+                                         <a href="#">成人</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <h3>
+                                        <i class="hd_iconfont">&#xe634</i>
+                                        <a href="#">礼品卡</a>、
+                                         <a href="#">页游</a>、
+                                         <a href="#">图书</a>
+                                    </h3>
+                                    <!--     鼠标移入上面h3时显示-->
+                                    <div class="hd_show_sort">
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerNavWrap">
+                    <ul class="headerNavMain ">
+                        <li><a href="#" class="light">首页</a></li>
+                        <li><a href="#" class="light">自营超市</a></li>
+                        <li><a href="#" class="light">1号团</a></li>
+                        <li><a href="#">1号商城</a></li>
+                        <li><a href="#">闪购</a></li>
+                        <li><a href="#">活色生鲜</a></li>
+                        <li><a href="#">医药</a></li>
+                        <li><a href="#">1号海购</a></li>
+                        <li><a href="#">电器城</a></li>
+                    </ul>
+                </div>
+                <div class="hd_mobile_wrap">
+                    <a href="#">
+                        <img src="images/mobie_buy.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 主体内容-->
+    <div class="layout_main">
+        <div class="laybox banner_slider  clearfix">
+            <div class="mod_promo_show">
+                <div class="promo_wrapper">
+                    <!--有序列表-->
+                    <ol class="clearfix">
+                        <li style="background:#9a3be1;display:list-item"> <!--class="broadcast" 方法二-->
+                            <a href="#">
+                                <img src="images/ChEi3FfGMoCAUrhoAAHAmy4VCrE86900.jpg" />
+                            </a>
+                        </li>
+                       
+                        <li style="background: rgb(40, 110, 252);">
+                            <a href="#">
+                                <img src="images/ChEiBle-2pqAZXdkAAGfNdVYSjw48100.jpg" />
+                            </a>
+                        </li>
+                        <li style ="background:#f34568;">
+                            <a href="#">
+                                <img src="images/ChEiBVfAA8uAVBBKAAILeb2pwgY20200.jpg" />
+                            </a>
+                        </li> 
+                        <li style="background:#c032e8;">
+                            <a href="#">
+                                <img src="images/ChEi2lfD5eqAevp8AAIDISLDtZU99100.jpg" />
+                            </a>
+                        </li>
+                        <li style ="background:#de3957;">
+                            <a href="#">
+                                <img src="images/ChEiBVfAAQiAeXEAAAIrK-OE4iI60900.jpg" />
+                            </a>
+                        </li>
+                        <li style="background:rgb(222, 0, 0);">
+                            <a href="#">
+                                <img src="images/CgQIzVfROZ2AWTJqAAHbBv69Z0g74800.webp.jpg" />
+                            </a>
+                        </li>
+                        <li style ="background:#fdd224;">
+                            <a href="#">
+                                <img src="images/main_broadcast1.jpg" />
+                            </a>
+                        </li>
+                        <li style ="background:rgb(194, 213, 207)";>
+                            <a href="#">
+                                <img src="images/ChEi3FfRLgiAEJdOAAHsGrenfvI15900.webp.jpg" />
+                            </a>
+                        </li>
+                        <li style="background:rgb(0, 0, 0);">
+                            <a href="#">
+                                <img src="images/CgQIzlfQ3EWAQTPmAAB-6-7Hed043200.webp.jpg" />
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+                <div class="mod_promonum_show">
+                    <ol class="clearfix">
+                        <li class="cur"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+                <a class="show_next">
+                    <i></i>
+                </a>
+                <a  class="show_pre">
+                    <i></i>
+                </a>
+            </div>
+            <div class="layout_col_b">
+                <div class="mod_yhd_notice">
+                    <dl>
+                        <dt>快讯</dt>
+                        <dd class="first_red">
+                            <a href="#">【<b>公告</b>】会员2015年积分清零公告</a>
+                        </dd>
+                        <dd>
+                            <a href="#">【<b>优选</b>】金秋聚惠，五折天</a>
+                        </dd>
+                        <dd>
+                            <a href="#">【<b>优选</b>】月昀金秋，月饼买1送1</a>
+                        </dd>
+                        <dd>
+                            <a href="#">【<b>优选</b>】酒饮大咖，hold住家宴</a>
+                        </dd>
+                        <dd>
+                            <a href="#">【<b>优选</b>】秋季“厨”污，五折天</a>
+                        </dd>
+                        <dd>
+                            <a href="#">【<b>优选</b>】秋焕新颜，五折天</a>
+                        </dd>
+
+                    </dl>
+                </div>
+                <div class="mod_vip">
+                    <p class="vip_tit">1号专享</p>
+                    <ul>
+                        <li>
+                            <img src="images/vip1.png" />
+                            <p>0元试用</p>
+                        </li>
+                        <li>
+                            <img src="images/vip2.png" />
+                            <p>0元积分兑</p>
+                        </li>
+                        <li>
+                            <img src="images/vip3.png" />
+                            <p>新客专享</p>
+                        </li>
+                        <li>
+                            <img src="images/vip4.png" />
+                            <p>充值中心</p>
+                        </li>
+                        <li>
+                            <img src="images/vip5.png" />
+                            <p>网页游戏</p>
+                        </li>
+                        <li>
+                            <img src="images/vip6.png" />
+                            <p>1号钱包</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="index_column_ad wrap">
+            <a href="#">
+                <img src="images/ChEiBVfDnq-AY_ntAACWTEARA4889400.jpg" />
+            </a>
+        </div>
+        <div class="wrap  mod_index_ad_floor ">
+            <div class="big_pic">
+                <a href="#">
+                    <img src="images/CgQIzlfNKiWAAJgrAACE1bm1weM02200.webp.jpg" /></a>
+            </div>
+            <div class="small_pic border_right">
+                <div class="up">
+                    <a href="#">
+                        <strong>进口美食</strong>
+                        <span>德亚牛奶</span>
+                        <img class="ad_floor_item_img" src="images/ChEiBVfJJgeAPHwlAAAqebLxFXs38600.webp.jpg" /></a>
+                </div>
+                <div class="down">
+                    <a href="#">
+                        <strong>特产中国 1元抢鲜</strong>
+                        <span>第一食品 蜜汁豆干</span>
+                        <img class="ad_floor_item_img" src="images/CgQCsVfNPSiAKCpRAABOU2z-rtE38800.webp.jpg" /></a>
+                </div>
+            </div>
+            <div class="small_pic">
+                <div class="up">
+                    <a href="#">
+                        <strong>低价天天抢-华东专享</strong>
+                        <span>妈妈壹选蔬果净 420g</span>
+                        <img class="ad_floor_item_img" src="images/ChEiBVfAAMaAGInuAAAZObZYaBY51200.webp.jpg" /></a>
+                </div>
+                <div class="down">
+                    <a href="#">
+                        <strong>新品上市 0元试用</strong>
+                        <span>专注隔水炖13年</span>
+                        <img class="ad_floor_item_img" src="images/ChEiBlfJHwaAesE5AAAWzQd0RZM00000.webp.jpg" /></a>
+                </div>
+            </div>
+            <div class="big_pic">
+                <a href="#">
+                    <img src="images/CgQIzlfJGkeAT1nNAAFFnSdLEfU05100.webp.jpg" /></a>
+            </div>
+            <div class="small_pic">
+                <div class="up">
+                    <a href="#">
+                        <strong>手机家电城</strong>
+                        <span>魅蓝 Max新品预约</span>
+                        <img class="ad_floor_item_img" src="images/CgQI0FfNObqAeZBoAAAmpu0MWkc47300.webp.jpg" /></a>
+                </div>
+                <div class="down">
+                    <a href="#">
+                        <strong>山姆会员商店</strong>
+                        <span>乐而雅 卫生巾</span>
+                        <img class="ad_floor_item_img" src="images/ChEiBlfE_1iAUqTiAAAyvokPjks77000.webp.jpg" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="index_column_ad wrap">
+            <a href="#">
+                <img src="images/CgQIzlfH3UyAP6ZwAAHMVqlAqzo91800.webp.jpg" />
+            </a>
+        </div>
+        <div id="needLazyLoad">
+            <div class="wrap mod_index_floor" id="Import_Sea_Purchase">
+                <div class="mod_floor_title red_bottom">
+                    <div class="mft_left">
+                        <a href="#" class="bt red_bottom">进口</a>
+                        <span class="bt">• </span>
+                        <a href="#" class="bt red_bottom">海购</a>
+                        <a href="#" class="floor_subtitle_wrap ">
+                            <i></i>
+                            <div class="floor_subtitle">歪果仁爱的坚果</div>
+                        </a>
+                    </div>
+                    <div class="keyword">
+                        <a href="#">进口酒</a>|<a href="#">进口冲饮</a>|<a href="#">进口直采</a>|<a href="#">海购轻奢</a>|<a href="#">海购电器</a>|<a href="#">海购母婴</a>
+                    </div>
+                </div>
+                <div class="a_con">
+                    <div class="tag clearfix">
+                        <a href="#">进口牛奶</a>
+                        <a href="#">进口饼干</a>
+                        <a href="#">进口巧克力</a>
+                        <a href="#">进口坚果</a>
+                        <a href="#">进口咖啡</a>
+                        <a href="#">进口粮油</a>
+                    </div>
+                    <a class="pic" href="#">
+                        <h3 class="red_font ">思乡之情</h3>
+                        <h4>油然而生</h4>
+                        <img src="images/CgQIzlfGfJmAB8ggAAT_giteXxE76500.webp.jpg" />
+                    </a>
+                </div>
+                <div class="b_con">
+                    <div class="slider_index_ad">
+                        <ul class="img_box">
+                            <li>
+                                <a href="#">
+                                    <img src="images/CgQI0FfJKY2AcB2LAACSBk9Ho7c80100.webp.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEi3Feq42CAakP3AACOcMr6inw81500.webp.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEi2letNMGAbzxxAABzxpCp3pU15000.webp.jpg" /></a>
+                            </li>
+                        </ul>
+                        <ul class="trig_box">
+                            <li class="clearfix">
+                                <a href="#" class="cur">
+                                    <span></span>
+
+                                </a>
+                                <a href="#"><span></span></a>
+                                <a href="#"><span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>爆款5折起</h3>
+                        <h4>进口水饮买1送1</h4>
+                        <img src="images/ChEi2leQLgmAFCEXAAAlM_5kJ1090900.webp.jpg" />
+                    </a>
+                    <a class="pic" href="#">
+                        <h3>买1送1</h3>
+                        <h4>进口休闲零食</h4>
+                        <img src="images/ChEbuleQlcCAeSqcAAAun3_riBc60500.webp.jpg" />
+                    </a>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>进口牛奶品类中心</h3>
+                        <h4>爆款5.9元起</h4>
+                        <img src="images/ChEbvFeYeoWAYOcPAABAiSuI10405100.webp.jpg" />
+                    </a>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>香港美心</h3>
+                        <h4>爆款138元起</h4>
+                        <img src="images/CgQI0FfOij2AJ4V3AAAnlnIYUYU46900.webp.jpg" />
+                    </a>
+                    <a class="pic" href="#">
+                        <h3>进口咖啡品类中心</h3>
+                        <h4>满199立减100</h4>
+                        <img src="images/ChEiBFfHiWaAXo21AAAjEMSkkak42500.webp.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="wrap mod_index_floor" id="Fresh_living_color">
+                <div class="mod_floor_title red_bottom">
+                    <div class="mft_left">
+                        <a href="#" class="bt red_bottom">活色生鲜</a>
+
+                        <a href="#" class="floor_subtitle_wrap ">
+                            <i></i>
+                            <div class="floor_subtitle">美味需要耐心点</div>
+                        </a>
+                    </div>
+                    <div class="keyword">
+                        <a href="#">月饼券</a>|<a href="#">大闸蟹券</a>|<a href="#">速冻食品</a>|<a href="#">低温乳品</a>|<a href="#">冷面熟食</a>|<a href="#">烘焙甜品</a>
+                    </div>
+                </div>
+                <div class="a_con">
+                    <div class="tag clearfix">
+                        <a href="#">票券礼券</a>
+                        <a href="#">新鲜水果</a>
+                        <a href="#">芒果</a>
+                        <a href="#">品质牛肉</a>
+                        <a href="#">海鲜水产</a>
+                        <a href="#">鲜活蛋类</a>
+                    </div>
+                    <a class="pic" href="#">
+                        <h3 class="red_font ">阳澄湖大闸蟹</h3>
+                        <h4>买二送一</h4>
+                        <img src="images/ChEbu1fI4dCAGJMDAAArt9T-nwc73400.webp.jpg" />
+                    </a>
+                </div>
+                <div class="b_con">
+                    <div class="slider_index_ad">
+                        <ul class="img_box">
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEiBlfHhyeAXEHJAABXcureKrU38000.webp.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEi2Fd06QmAOYp6AAByB1uMbJc55300.webp.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/CgQI0FfPdb6AOE8dAABBl9D6deg32600.webp.jpg" /></a>
+                            </li>
+                        </ul>
+                        <ul class="trig_box">
+                            <li class="clearfix">
+                                <a href="#" class="cur"><span></span></a>
+                                <a href="#"><span></span></a>
+                                <a href="#"><span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>枣想柚货你</h3>
+                        <h4>冬枣39元/2斤</h4>
+                        <img src="images/ChEi3FfFRa6ABRDSAAAjYC54UBg82200.webp.jpg" />
+                    </a>
+                    <a class="pic" href="#">
+                        <h3>土货进城记 </h3>
+                        <h4>我很土但是我超美味</h4>
+                        <img src="images/ChEiBlfOaTmAKbE6AAA4QmCT2Uo10600.webp.jpg" />
+                    </a>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>活色生鲜排行榜 HOT</h3>
+                        <h4>澳洲牛排10份装158元</h4>
+                        <img src="images/CgQIzlegQpqAIOjAAAB0GBzo_Rk32800.webp.jpg" />
+                    </a>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>枣想柚惑你</h3>
+                        <h4>第二件减10元</h4>
+                        <img src="images/ChEiBFfM1hiAHVtWAAA25aah0BI62700.webp.jpg" />
+                    </a>
+                    <a class="pic" href="#">
+                        <h3>发现中国味道</h3>
+                        <h4>熟食钜惠 好评推荐</h4>
+                        <img src="images/ChEi21eV3TaADiXgAAAe22HMFfI55100.webp.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="wrap mod_index_floor" id="Personality_kitchen">
+                <div class="mod_floor_title green_bottom">
+                    <div class="mft_left">
+                        <a href="#" class="bt green_bottom">个性厨卫</a>
+
+                        <a href="#" class="floor_subtitle_wrap ">
+                            <i></i>
+                            <div class="floor_subtitle">等到秋天才补水？</div>
+                        </a>
+                    </div>
+                    <div class="keyword">
+                        <a href="#">沐浴美肌</a>|<a href="#">防晒霜</a>|<a href="#">纸巾</a>|<a href="#">换季衣物洗护</a>|<a href="#">面膜</a>|<a href="#">驱蚊驱虫</a>
+                    </div>
+                </div>
+                <div class="a_con">
+                    <div class="tag clearfix">
+                        <a href="#">发水沐浴</a>
+                        <a href="#">女性护理</a>
+                        <a href="#">口腔护理</a>
+                        <a href="#">纸品湿巾</a>
+                        <a href="#">衣物洗护</a>
+                        <a href="#">家庭清洁</a>
+                    </div>
+                    <a class="pic" href="#">
+                        <h3 class="green_font ">蓝月亮开学焕新季</h3>
+                        <h4>满199减100</h4>
+                        <img src="images/ChEi3FfH4DeAAVTIAACeezNQhNg97000.webp.jpg" />
+                    </a>
+                </div>
+                <div class="b_con">
+                    <div class="slider_index_ad">
+                        <ul class="img_box">
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEiBFfH5omAK0UeAACQ-nEZAOo13900.webp.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEi1FfKNbOADqyxAACcbQzdjx463500.webp.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEbvFfOjRGAF8_wAACTiZEmXRQ89900.webp.jpg" /></a>
+                            </li>
+                        </ul>
+                        <ul class="trig_box">
+                            <li class="clearfix">
+                                <a href="#" class="cur"><span></span></a>
+                                <a href="#"><span></span></a>
+                                <a href="#"><span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>自营纸品中心</h3>
+                        <h4>1.8折起</h4>
+                        <img src="images/ChEi3Fd8xzuANW_rAAAd-_PZKtE18800.webp.jpg" />
+                    </a>
+                    <a class="pic" href="#">
+                        <h3>洗护超重0运费 </h3>
+                        <h4>再享1元限量抢</h4>
+                        <img src="images/ChEi1Ve-2eeADvaiAAATwmmLGwI49500.webp.jpg" />
+                    </a>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>199减100</h3>
+                        <h4>个护美妆4.9元起</h4>
+                        <img src="images/ChEi1FehrdSAXc1MAABKPnyOZBs24900.webp.jpg" />
+                    </a>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>0.1元起秒杀</h3>
+                        <h4>自营口腔护理精选团</h4>
+                        <img src="images/CgQIzleyeYeAEBe0AAA23DwV2Jg69100.webp.jpg" />
+                    </a>
+                    <a class="pic" href="#">
+                        <h3>2.3折起</h3>
+                        <h4>女性护理品类团</h4>
+                        <img src="images/CgQIzleXLe-AUTNyAAA7GsqbWZc81900.webp.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="wrap mod_index_floor" id="Home_Museum">
+                <div class="mod_floor_title red_bottom">
+                    <div class="mft_left">
+                        <a href="#" class="bt red_bottom">家居馆</a>
+
+                        <a href="#" class="floor_subtitle_wrap ">
+                            <i></i>
+                            <div class="floor_subtitle">寝室发霉怎么办？</div>
+                        </a>
+                    </div>
+                    <div class="keyword">
+                        <a href="#">家居拖鞋</a>|<a href="#">伞</a>|<a href="#">床上用品</a>|<a href="#">狗粮</a>|<a href="#">空调被</a>|<a href="#">毛静</a>
+                    </div>
+                </div>
+                <div class="a_con">
+                    <div class="tag clearfix">
+                        <a href="#">餐具水具</a>
+                        <a href="#">厨具锅具</a>
+                        <a href="#">床上用品</a>
+                        <a href="#">家纺布艺</a>
+                        <a href="#">家装建材</a>
+                        <a href="#">宠物用品</a>
+                    </div>
+                    <a class="pic" href="#">
+                        <h3 class="red_font ">TTK 全自动经典男士商务折叠遮阳伞大双人晴雨伞防风防晒防雨伞深蓝均码</h3>
+                        <h4>TTK 全自动经典男士商务折叠遮阳伞大双人晴雨伞防风防晒防雨伞深蓝均码</h4>
+                        <img src="images/ChEi2lc0PBiAYgF0AAkAZtvANOk99800.webp.jpg" />
+                    </a>
+                </div>
+                <div class="b_con">
+                    <div class="slider_index_ad">
+                        <ul class="img_box">
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEi1FfJUhqAQ59vAAA5uQALH5413600.webp.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEi21fI3aSADgh9AABygRV-25s28900.webp.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEi1lfP4x6AHGZLAABhhj9wKD444000.webp.jpg" /></a>
+                            </li>
+                        </ul>
+                        <ul class="trig_box">
+                            <li class="clearfix">
+                                <a href="#" class="cur"><span></span></a>
+                                <a href="#"><span></span></a>
+                                <a href="#"><span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>家纺超“惠”团</h3>
+                        <h4>好货9.9包邮 万元返现</h4>
+                        <img src="images/CgQI0FfJPJKAWKUxAAA2MRhzCsE44300.webp.jpg" />
+                    </a>
+                    <a class="pic" href="#">
+                        <h3>金秋家装超级团购日 </h3>
+                        <h4>万元返现 9.9元起</h4>
+                        <img src="images/ChEi2lfQB3WAPpe0AAArZ3HSHz002600.webp.jpg" />
+                    </a>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>家居焕新季</h3>
+                        <h4>满299-100 买一得2</h4>
+                        <img src="images/ChEiBVfNQiyAV2e9AABNVBgs0nM16900.webp.jpg" />
+                    </a>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>食补新装备</h3>
+                        <h4>爆款直降</h4>
+                        <img src="images/CgQCslfOe3aAPoSNAAAxoYovp-M50700.webp.jpg" />
+                    </a>
+                    <a class="pic" href="#">
+                        <h3>high教师节鲜花家饰有礼</h3>
+                        <h4>推荐59元起</h4>
+                        <img src="images/ChEi1FfJSN6AZ9TiAAAU_QUeoUg54600.webp.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="wrap mod_index_floor" id="Popular_Stores">
+                <div class="mod_floor_title grey_bottom">
+                    <div class="mft_left">
+                        <a href="#" class="bt grey_bottom">流行百货</a>
+
+                        <a href="#" class="floor_subtitle_wrap ">
+                            <i></i>
+                            <div class="floor_subtitle">一叶知秋，换新衣~？</div>
+                        </a>
+                    </div>
+                    <div class="keyword">
+                        <a href="#">连衣裙</a>|<a href="#">男装新品</a>|<a href="#">大牌腕表</a>|<a href="#">新款凉鞋</a>|<a href="#">女包新品</a>|<a href="#">泳衣</a>
+                    </div>
+                </div>
+                <div class="a_con">
+                    <div class="tag clearfix">
+                        <a href="#">女装新品</a>
+                        <a href="#">品质男装</a>
+                        <a href="#">大牌箱包</a>
+                        <a href="#">运动户外</a>
+                        <a href="#">珠宝饰品</a>
+                        <a href="#">男女鞋靴</a>
+                    </div>
+                    <a class="pic" href="#">
+                        <h3 class="grey_font ">爆款直降</h3>
+                        <h4>万元返现</h4>
+                        <img src="images/CgQIz1fPwHiAbc8HAABJXvZeT6Y24900.webp.jpg" />
+                    </a>
+                </div>
+                <div class="b_con">
+                    <div class="slider_index_ad">
+                        <ul class="img_box">
+
+                            <li>
+                                <a href="#">
+                                    <img src="images/ChEbvFfMywmAOnM0AACV584f_KU05000.webp.jpg" /></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/CgQDrlfOZQaAf6OnAACWkC1FB-o56900.webp.jpg" /></a>
+                            </li>
+                        </ul>
+                        <ul class="trig_box">
+                            <li class="clearfix">
+                                <a href="#" class="cur"><span></span></a>
+                                <a href="#"><span></span></a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>时尚女装</h3>
+                        <h4>专柜品牌亦谷，秋装0.9折起</h4>
+                        <img src="images/CgQDrVfM3BSAWkp3AABU1n45eLg17500.webp.jpg" />
+                    </a>
+
+                </div>
+                <div class="c_con">
+                    <a class="pic" href="#">
+                        <h3>箱包配饰馆</h3>
+                        <h4>清仓大促 39元起</h4>
+                        <img src="images/CgQCtFfPgI2AG_swAABagWuuvig59400.webp.jpg" />
+                    </a>
+                </div>
+                <div class="c_con">
+
+                    <a class="pic" href="#">
+                        <h3>百雀羚专业护肤</h3>
+                        <h4>百雀羚专业护肤</h4>
+                        <img src="images/CgQI0FbW-feAZnIIAAAvNGK8HN853600.webp.jpg" />
+                    </a>
+                    <a class="pic" href="#">
+                        <h3>运动户外 大牌特惠</h3>
+                        <h4>低至3折起</h4>
+                        <img src="images/ChEiBVfP0jiAeu3eAAAYf9WgIIA04000.webp.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="wrap mod_index_floor" id="Flash_Purchase">
+                <div class="mod_floor_title brown_bottom">
+                    <div class="mft_left">
+                        <a href="#" class="bt brown_bottom">闪购</a>
+                    </div>
+                    <div class="update_time">
+                        <a href="#">品牌点亮生活，每天十点上新</a>
+                    </div>
+                </div>
+                <div class="sgwrap">
+                    <div class="sg_tab">
+                        <em class="tab_arrow"></em>
+                        <ul>
+                            <li>
+                                <a href="#">大牌推荐</a>
+                            </li>
+                            <li>
+                                <a href="#">销售排行</a>
+                            </li>
+                            <li>
+                                <a href="#">最后疯抢</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sg_tabwrap">
+                        <div class="sg_tabcontent">
+                            <div class="sg_banner sg_big">
+                                <a href="#">
+                                    <img src="images/CgQIzlfOonaAcm0tAACyIQcK-4I30100.webp.jpg" />
+                                    <u>
+                                        <b>3.4</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余
+                                <span>
+                                    <em>2</em>天
+                                </span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/ChEiBFfJGuKALHjlAAC0hfPLfgA44700.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/CgQCslfOo_CABTJhAACtFOuFlA426400.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/CgQIzlfP1-GAIy7sAACYXoNHnpE29700.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/CgQIzVfP6m6ANbFWAADFLKi3Xng12900.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sg_tabcontent" style="display: none">
+                            <div class="sg_banner sg_big">
+                                <a href="#">
+                                    <img src="images/ChEi1VfNBHOAb8dtAACkssppr_Y00500.webp.jpg" />
+                                    <u>
+                                        <b>3.4</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余
+                                <span>
+                                    <em>2</em>天
+                                </span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/ChEiBFfP2DWAAFPdAADscvoo5Q075100.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/CgQIz1fP6y-AYokFAABxSg50YqA38000.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/CgQIzVfOpl6AH-s2AABVnNngRqg03400.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/CgQI0FfP6-2AQSGkAAC3sKPwAIE12400.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="sg_tabcontent" style="display: none">
+                            <div class="sg_banner sg_big">
+                                <a href="#">
+                                    <img src="images/ChEi1VfNRr2AGsVvAADtWJGIrM821800.webp.jpg" />
+                                    <u>
+                                        <b>3.4</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余
+                                <span>
+                                    <em>2</em>天
+                                </span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/ChEiBVfNRoiAc9_uAAC1-atRyio69000.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/ChEi3FfNRvSAeAkXAAB7c0IlG7Q44800.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/CgQDrVfP35CAdd0tAABsFSUWOus00100.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                            <div class="sg_banner sg_small">
+                                <a href="#">
+                                    <img src="images/CgQIzVfOpl6AH-s2AABVnNngRqg03400.webp.jpg" />
+                                    <u>
+                                        <b>1.6</b>折起
+                                    </u>
+                                </a>
+                                <p class="count_down">
+                                    <i></i>剩余<span><em>2</em>天</span>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!--底部-->
+        <div class="ft_wrap">
+            <div class="wrap ft_footer_service clearfix">
+                <a href="#">
+                    <img src="images/CgQI0lWskgmADBnsAAAPZvcSh3E68900.jpg" />
+                    <b>正品保障</b>
+                    <span>正品行货 放心选购</span>
+                </a>
+                <a href="#">
+                    <img src="images/ChEbulWsk4iADa_aAAAM544hHN818600.jpg" />
+                    <b>满68包邮</b>
+                    <span>满68元 免运费</span>
+                </a>
+                <a href="#">
+                    <img src="images/CgQIz1WslI-Adao3AAAN5b_ut2I80100.jpg" />
+                    <b>售后无忧</b>
+                    <span>7天无理由退货</span>
+                </a>
+                <a href="#">
+                    <img src="images/ChEi11WsyiyALBbiAAAN9lEEK5M33200.jpg" />
+                    <b>准时送达</b>
+                    <span>收货时间由你做主</span>
+                </a>
+            </div>
+            <div class="wrap ft_service_link  clearfix">
+                <div class="ft_help_list">
+                    <dl>
+                        <dt>新手入门</dt>
+                        <dd><a href="#">购物流程</a></dd>
+                        <dd><a href="#">会员制度</a></dd>
+                        <dd><a href="#">订单查询</a></dd>
+                        <dd><a href="#">发票制度</a></dd>
+                        <dd><a href="#">常见问题</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>支付方式</dt>
+                        <dd><a href="#">货到付款</a></dd>
+                        <dd><a href="#">网上支付</a></dd>
+                        <dd><a href="#">银行转账</a></dd>
+                        <dd><a href="#">礼品卡支付</a></dd>
+                        <dd><a href="#">其他支付</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>配送服务</dt>
+                        <dd><a href="#">配送范围及运费</a></dd>
+                        <dd><a href="#">配送进度查询</a></dd>
+                        <dd><a href="#">自提服务</a></dd>
+                        <dd><a href="#">商品验收与签收</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>售后保障</dt>
+                        <dd><a href="#">退换货政策</a></dd>
+                        <dd><a href="#">退换货流程</a></dd>
+                        <dd><a href="#">退款说明</a></dd>
+                        <dd><a href="#">延保说明页面</a></dd>
+                        <dd><a href="#">联系客服</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>商家合作</dt>
+                        <dd><a href="#">商家入驻</a></dd>
+                        <dd><a href="#">商必赢</a></dd>
+                        <dd><a href="#">平台规则</a></dd>
+                        <dd><a href="#">企业采购</a></dd>
+                    </dl>
+                </div>
+                <div class="ft_code_wrap">
+                    <div class="ft_mobile_code">
+                        <p>APP更优惠</p>
+                        <img src="images/CgQCr1KW1juAFH9YAAAatCrcuRI48200.webp.jpg" />
+                    </div>
+                    <div class="ft_mobile_code">
+                        <p>加微信查订单</p>
+                        <img src="images/CgQCtlKW1RSAe6dIAAAcun_R_Wk58300.webp.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="ft_footer_link">
+                    <a href="#">关于一号店</a>|<a href="#">我们的团队</a>|<a href="#">网站联盟</a>|<a href="#">热门搜索</a>|<a href="#">友情链接</a>|<a href="#">一号店社区</a>|<a href="#">诚征英才</a>|<a href="#">商家登录</a>|<a href="#">供应商登录</a>|<a href="#">放心搜</a>|<a href="#">1号店新品</a>|<a href="#">开放平台</a>|<a href="#">沃尔玛</a>
+                </p>
+                <p class="ft_footer_link">
+                    <a href="#">沪ICP备14050023号</a>|<a href="#">合字B1.B2-20130004</a>|<a href="#">营业执照</a>|<a href="#">互联网药品信息服务资格证</a>|<a href="#">互联网药品交易服务资格证</a>
+                </p>
+                <p class="ft_footer_link">Copyright© 1号店网上超市 2007-2016，All Rights Reserved</p>
+                <small class="ft_pic_link">
+                    <a href="#">
+                        <img src="images/CgMBmVDzwyaAaIMBAAAJZgSEr6I65200.webp.jpg" /></a>
+                    <a href="#">
+                        <img src="images/CgQCr1Dzwj2AVUL0AAA-ic2BxNw39500.webp.jpg" /></a>
+                    <a href="#">
+                        <img src="images/CgQCrlDzwnKAUkfSAAAIPrrML6M92400.webp.jpg" /></a>
+                    <a href="#">
+                        <img src="images/CgQCsVDzw0GABUElAADHlvRfNUk94600.webp.jpg" /></a>
+                    <a href="#">
+                        <img src="images/CgMBmVLfYZGALWNHAAAOxFbda9472600.gif" /></a>
+                    <a href="#">
+                        <img src="images/CgQCr1PQy1CAF7vaAABDexsiEYM24800.webp.jpg" /></a>
+                    <a href="#">
+                        <img src="images/CgQCrlPYTqCASlHXAAAd82JE0eA31000.webp.jpg" /></a>
+                    <a href="#">
+                        <img src="images/ChEi1FYXHcOAVk_WAAAL2r2-yfo10200.jpg" /></a>
+                    <a href="#">
+                        <img src="images/ChEi1VcfPl2AC1T8AAANFrEfJlw97300.webp.jpg" /></a>
+
+                </small>
+            </div>
+        </div>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            yihaodian.Init();
+        });
+    </script>
+</body>
+</html>

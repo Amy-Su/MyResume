@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="jquery-1.7.2.js"></script>
+    <title></title>
+
+</head>
+<body>
+
+  <div class="movie">
+        <div class="movie_img">
+            <img src="images/movie_weiwei.png" />
+        </div>
+        <div class="movie_details">
+            <h3>微微一笑很倾城
+                <span>2016</span>
+            </h3>
+            <p><i class="score"></i>5.5</p>
+            <p>(21368人评价）</p>
+            <p>105分钟 中国大陆</p>
+            <p>导演 赵天宇</p>
+            <p>主演 井柏然/杨颖/李沁</p>
+            <div class="select_seat">
+                <a href="#" target="_blank" class="select_seat_a">在线选座</a>
+            </div>
+        </div>
+    </div>
+    <style>
+		*{    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #333;
+    font-family: "微软雅黑";}
+        .movie {
+            position: relative;
+            margin: 10px auto;
+            width: 150px;
+            height: 200px;
+            overflow: hidden;
+            font-size: 12px;
+        }
+
+        .movie_img {
+            position: absolute;
+            width: 150px;
+            height: 200px;
+        }
+
+            .movie_img img {
+                width: 100%;
+                height: 100%;
+            }
+
+        .movie_details {
+            position: relative;
+            top: 200px;
+            width: 143px;
+            height: 193px;
+            border: 1px solid #ddd;
+            padding-top: 5px;
+            padding-left: 5px;
+        }
+
+            .movie_details h3 {
+                padding-top: 5px;
+                font-weight: normal;
+            }
+.movie_details span{font-size:9pt;}
+            .movie_details p {
+                margin-top: 8px;
+            }
+
+            .movie_details .score {
+                display: inline-block;
+                width: 55px;
+                height: 11px;
+                background: url(images/start.png) no-repeat 0 -44px;
+            }
+
+            .movie_details .select_seat {
+                margin-top: 15px;
+            }
+
+                .movie_details .select_seat .select_seat_a {
+                    padding: 5px 10px 5px 10px;
+                    border-radius: 2px;
+                    color: white;
+                    background: #268dcd;
+                }
+    </style>
+    <script>
+        $(function () {
+            var moveHeight = 200,
+                moveTime = 300;
+            $(".movie").hover(function () {
+                $(this).children('.movie_img').animate({//children子元素
+                    top: '-' + moveHeight + 'px'
+                }, moveTime);
+                $(this).children('.movie_details').animate({
+                    top: '0px'
+                }, moveTime);
+            }, function () {
+                $(this).children('.movie_img').animate({
+                    top: '0px'
+                }, moveTime);
+                $(this).children('.movie_details').animate({
+                    top: moveHeight + 'px'
+                }, moveTime);
+            });
+        });
+
+    </script>
+
+
+</body>
+</html>

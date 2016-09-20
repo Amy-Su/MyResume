@@ -1,2 +1,283 @@
-hello
-爱迪生
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="nofollow" />
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>我的简历</title>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/MyResume.js"></script>
+    <link href="css/MyResume.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main_body">
+        <canvas class="backgr_canvas"></canvas>
+        <style>
+            html, body {
+                background: #000;
+                margin: 0;
+                padding: 0;
+            }
+            canvas {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+            }
+        </style>
+        <script>
+            $(function () {
+                var canvas = document.querySelector('canvas'),
+                    ctx = canvas.getContext('2d')
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                ctx.lineWidth = .3;
+                ctx.strokeStyle = (new Color(150)).style;
+                var mousePosition = {
+                    x: 30 * canvas.width / 100,
+                    y: 30 * canvas.height / 100
+                };
+                var dots = {
+                    nb: 750,
+                    distance: 50,
+                    d_radius: 100,
+                    array: []
+                };
+                function colorValue(min) {
+                    return Math.floor(Math.random() * 255 + min);
+                }
+                function createColorStyle(r, g, b) {
+                    return 'rgba(' + r + ',' + g + ',' + b + ', 0.8)';
+                }
+                function mixComponents(comp1, weight1, comp2, weight2) {
+                    return (comp1 * weight1 + comp2 * weight2) / (weight1 + weight2);
+                }
+                function averageColorStyles(dot1, dot2) {
+                    var color1 = dot1.color,
+                        color2 = dot2.color;
+                    var r = mixComponents(color1.r, dot1.radius, color2.r, dot2.radius),
+                        g = mixComponents(color1.g, dot1.radius, color2.g, dot2.radius),
+                        b = mixComponents(color1.b, dot1.radius, color2.b, dot2.radius);
+                    return createColorStyle(Math.floor(r), Math.floor(g), Math.floor(b));
+                }
+                function Color(min) {
+                    min = min || 0;
+                    this.r = colorValue(min);
+                    this.g = colorValue(min);
+                    this.b = colorValue(min);
+                    this.style = createColorStyle(this.r, this.g, this.b);
+                }
+                function Dot() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.vx = -.5 + Math.random();
+                    this.vy = -.5 + Math.random();
+                    this.radius = Math.random() * 2;
+                    this.color = new Color();
+                    console.log(this);
+                }
+                Dot.prototype = {
+                    draw: function () {
+                        ctx.beginPath();
+                        ctx.fillStyle = this.color.style;
+                        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+                        ctx.fill();
+                    }
+                };
+                function createDots() {
+                    for (i = 0; i < dots.nb; i++) {
+                        dots.array.push(new Dot());
+                    }
+                }
+                function moveDots() {
+                    for (i = 0; i < dots.nb; i++) {
+                        var dot = dots.array[i];
+                        if (dot.y < 0 || dot.y > canvas.height) {
+                            dot.vx = dot.vx;
+                            dot.vy = -dot.vy;
+                        }
+                        else if (dot.x < 0 || dot.x > canvas.width) {
+                            dot.vx = -dot.vx;
+                            dot.vy = dot.vy;
+                        }
+                        dot.x += dot.vx;
+                        dot.y += dot.vy;
+                    }
+                }
+                function connectDots() {
+                    for (i = 0; i < dots.nb; i++) {
+                        for (j = 0; j < dots.nb; j++) {
+                            i_dot = dots.array[i];
+                            j_dot = dots.array[j];
+                            if ((i_dot.x - j_dot.x) < dots.distance && (i_dot.y - j_dot.y) < dots.distance && (i_dot.x - j_dot.x) > -dots.distance && (i_dot.y - j_dot.y) > -dots.distance) {
+                                if ((i_dot.x - mousePosition.x) < dots.d_radius && (i_dot.y - mousePosition.y) < dots.d_radius && (i_dot.x - mousePosition.x) > -dots.d_radius && (i_dot.y - mousePosition.y) > -dots.d_radius) {
+                                    ctx.beginPath();
+                                    ctx.strokeStyle = averageColorStyles(i_dot, j_dot);
+                                    ctx.moveTo(i_dot.x, i_dot.y);
+                                    ctx.lineTo(j_dot.x, j_dot.y);
+                                    ctx.stroke();
+                                    ctx.closePath();
+                                }
+                            }
+                        }
+                    }
+                }
+                function drawDots() {
+                    for (i = 0; i < dots.nb; i++) {
+                        var dot = dots.array[i];
+                        dot.draw();
+                    }
+                }
+                function animateDots() {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    moveDots();
+                    connectDots();
+                    drawDots();
+                    requestAnimationFrame(animateDots);
+                }
+                $('canvas').on('mousemove', function (e) {
+                    mousePosition.x = e.pageX;
+                    mousePosition.y = e.pageY;
+                });
+                $('canvas').on('mouseleave', function (e) {
+                    mousePosition.x = canvas.width / 2;
+                    mousePosition.y = canvas.height / 2;
+                });
+                createDots();
+                requestAnimationFrame(animateDots);
+            });
+        </script>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-9">
+                    <div class="main_home">
+                        <div class="head_img">
+                            <img class="img-circle" src="images/me.png" />
+                        </div>
+                        <div class="my_info">
+                            <h1 class="">Hello</h1>
+                            <h1>我是前端工程师</h1>
+                            <h1>葛苏涛</h1>
+                        </div>
+                    </div>
+                    <div class=" main_part main_about">
+                        <h2>关于<span>我</span></h2>
+                        <table class="table_info">
+                            <tbody>
+                                <tr>
+                                    <td>出生年月：</td>
+                                    <td>1993.10.18</td>
+                                </tr>
+                                <tr>
+                                    <td>居住地：</td>
+                                    <td>苏州</td>
+                                </tr>
+                                <tr>
+                                    <td>学历：</td>
+                                    <td>本科</td>
+                                </tr>
+                                <tr>
+                                    <td>自我评价：</td>
+                                    <td>个性活泼开朗，善于沟通，能够很好的与人相处。<br>对人对事认真负责，注重团队合作。<br>有较好的审美意识，逻辑性强，向往新技术，愿意分享。<br>不惧辛苦和挑战，有快速分析和解决问题的能力，学习能力和适应能力强。</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+
+                    </div>
+                    <div class=" main_part main_work">
+                        <h2>工<span>作</span>经历</h2>
+                        <table class="table_info">
+                            <tbody>
+                                <tr>
+                                    <td>2015.8~：</td>
+                                    <td>苏州优米软件</td>
+                                </tr>
+                                <tr>
+                                    <td>担任职位：</td>
+                                    <td>研发工程师 WEB前端开发</td>
+                                </tr>
+								<tr>
+                                    <td>工作描述：</td>
+                                    <td>负责公司产品研发，具体分配到各个模块去完成。<br>最主要负责前端开发。</td>
+                                </tr>
+                                <tr>
+                                    <td>掌握技能：</td>
+                                    <td>熟悉HTML/HTML5、CSS/CSS3、JS/JQ;<br>熟悉AJAX，C#，.net，数据库技术,MVC框架;<br>熟练使用Photoshop;<br>熟悉bootstrap及响应式布局，有移动端开发经验</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="main_part main_practice">
+                        <h2>练<span>习</span>作品</h2>
+                        <div class="practice">
+                           
+                                    <a class="yhd" target="_blank" href="仿一号店/yihaodian.html">
+<div class="after"></div>
+                                        <div class="caption">
+                                            <h2>仿一号店</h2>
+                                            <img src="images/open.png" />
+                                        </div>
+                                    </a>
+                                </div>
+                                
+                       
+                        <h2><span>小</span>demo</h2>
+						 
+                        <div class="demo_content">
+						<div class="row">
+                                <div class="col-xs-6">
+                                     <a target="_blank" href="前端demo/xianjianliulunbo.html">仿仙剑六角色轮播</a>
+									 <a target="_blank" href="前端demo/movieinfo.html">显示电影详细介绍</a>  
+									 <a target="_blank" href="推箱子V2.0.0/GameTest.html">推箱子</a>
+                                </div>
+                                <div class="col-xs-6">
+                                   <a target="_blank" href="前端demo/newreport.html">新闻滚动条效果</a>
+								   <a target="_blank" href="前端demo/mousehighlight.html">仿京东鼠标经过高光</a>
+								   <a target="_blank" href="贪吃蛇V1.0.0/EatSnack.html">贪吃蛇</a>
+                                </div>
+                            </div>                                 
+                        </div>
+                    </div>
+                    <div class=" main_part main_contacts">
+                        <h2>联<span>系</span>方式</h2>
+                        <h3><i class="iconfont icon-dianhua"></i>13812678151</h3>
+                        <h3><i class="iconfont icon-QQ"></i>597601530</h3>
+                        <h3><i class="iconfont icon-email"></i>597601530@qq.com</h3>
+                    </div>
+                     
+                        </div>
+                <div class="col-xs-3">
+                    <nav>
+                        <ul class="my_nav">
+                            <li class="menu_home"><a href="#">首页</a></li>
+                            <li class="menu_about"><a href="#">关于我</a></li>
+                            <li class="menu_work"><a href="#">工作经历</a></li>
+                            <li class="menu_practice"><a href="#">练习</a></li>
+                            <li class="menu_contacts"><a href="#">联系我</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mob_mav">
+
+                    <ul>
+                        <li class="menu_home"><a href="#">首页</a></li>
+                        <li class="menu_about"><a href="#">关于我</a></li>
+                        <li class="menu_work"><a href="#">工作经历</a></li>
+                        <li class="menu_practice"><a href="#">练习</a></li>
+                        <li class="menu_contacts"><a href="#">联系我</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="jquery-1.7.2.js"></script>
+    <title></title>
+
+</head>
+<body>
+
+    <div class="high_light">
+        <a href="#"  target="_blank">
+        <img src="images/high_light.jpg" />
+         </a>
+     </div>
+    <style>
+	*{    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #333;
+    font-family: "寰蒋闆呴粦";}
+	
+        .high_light {
+            position: relative;
+            height: 450px;
+            width: 330px;
+            left: 150px;
+            top: 0;
+            overflow: hidden;
+        }
+
+            .high_light a {
+                display: block;
+            }
+
+                .high_light a:hover:before {
+                    left: 400px;
+                    transition: left 1s ease 0s;/*一秒内改变left*/
+                }
+
+                .high_light a:before {
+                    content: "";
+                    position: absolute;
+                    width: 80px;
+                    height: 450px;
+                    top: 0;
+                    left: -150px;
+                    overflow: hidden;
+                    background: -moz-linear-gradient(left,rgba(255,255,255,0)0,rgba(255,255,255,.2)50%,rgba(255,255,255,0)100%);
+                    background: -webkit-gradient(linear,left top,righttop,color-stop(0%,rgba(255,255,255,0)),color-stop(50%,rgba(255,255,255,.2)),color-stop(100%,rgba(255,255,255,0)));
+                    background: -webkit-linear-gradient(left,rgba(255,255,255,0)0,rgba(255,255,255,.2)50%,rgba(255,255,255,0)100%);/*线性渐变 rgba(255,255,255,0)全透明，rgba(255,255,255,1)不透明*/
+                    background: -o-linear-gradient(left,rgba(255,255,255,0)0,rgba(255,255,255,.2)50%,rgba(255,255,255,0)100%);
+                    -webkit-transform: skewX(-25deg);/*X轴2D转换*/
+                    -moz-transform: skewX(-25deg);
+                    -o-transform: skewX(-25deg);
+                }
+
+            .high_light img {
+                width :330px; height:475px;
+            }
+    </style>
+    
+</body>
+</html>

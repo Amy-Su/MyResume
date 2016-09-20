@@ -1,0 +1,33 @@
+﻿.eat_snack {
+    margin: 0 auto;
+    width: 535px;
+    font-family: 'Microsoft YaHei';
+}
+
+.header {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    width: 14px;
+    height: 14px;
+    border: 1px #808080 solid;
+}
+
+.tip_info {
+    text-align: right;
+    position: relative;
+    bottom: 100px;
+}
+
+    .tip_info span {
+        display: block;
+    }

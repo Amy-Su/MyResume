@@ -1,0 +1,338 @@
+﻿
+
+@media screen and (min-width: 768px) {
+    .col-xs-3 {
+        right: 26px;
+
+    }
+
+    .mob_mav {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    .col-xs-3 {
+        right: 40px;
+    }
+
+    .mob_mav {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .col-xs-3 {
+        right: 120px;
+    }
+
+    .mob_mav {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .col-xs-3 {
+        display: none;
+    }
+
+    .col-xs-9 {
+        width: 100%;
+    }
+   
+    .table_info {    margin: 50px 0;
+    }
+}
+@media screen and (max-width: 414px) {
+    .col-xs-3 {
+        display: none;
+    }
+
+    .col-xs-9 {
+        width: 100%;
+    }
+   
+    .caption h2 {margin-top:25px
+    }
+}
+.col-xs-3 {
+    margin-top: 80px;
+    position: fixed;
+    top: 0px;
+}
+
+body, p, form, input, button, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Century Gothic';
+   
+}
+
+
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+input, button, img {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+
+table {
+    font-size: 24px;
+    margin: 50px 50px;
+    color: transparent;
+}
+
+    table tr {
+        padding: 10px 0;
+    }
+
+    table td:first-child {
+        text-align: right;
+        word-break: keep-all;
+    }
+
+    table td:last-child {
+        word-break: normal;
+    }
+
+.main_body { min-width:320px;
+}
+
+.main_home {
+    margin: 50px 0;
+    padding-top: 50px;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    border: 2px solid rgb(127, 172, 227);
+}
+
+.my_info {
+    margin-top: 50px;
+}
+
+h1 {
+    padding: 12px 0;
+    text-shadow: 0px 0px 2px #fff;
+    color: rgb(127, 172, 227);
+    font-family: 'Century Gothic';
+}
+
+.main_part {
+    position: relative;
+    width: 100%;
+    min-height: 530px;
+    margin-bottom: 50px;
+    border-top: 8px solid rgb(255, 255, 255);
+    color: transparent;
+    text-shadow: 0px 0px 1px #fff;
+}
+
+h2 {
+    margin: 50px 0;
+    text-align: center;
+}
+
+span {
+    font-size: 36px;
+    color: rgb(127, 172, 227);
+    text-shadow: 0px 0px 2px #fff;
+    font-family: 'Century Gothic';
+    padding: 0 5px;
+}
+
+
+
+
+
+.practice {
+    width: 50%;
+	margin:0 auto;
+}
+
+    .practice a {
+        position: relative;
+        
+    }
+.practice a >.after{
+      padding-bottom:54%
+        
+    }
+
+    .practice .yhd {
+        width: 100%;
+        display: block;
+        background: url('../images/yihaodian.png') no-repeat;
+        background-size: 100%;
+    }
+
+    .practice .H5sq {
+        width: 100%;
+        display: block;
+        background: url('../images/2e1f292dd42a2834dae209c159b5c9ea14cebf7e.jpg') no-repeat;
+        background-size: 100%;
+    }
+
+    .practice a .caption {
+        display: none;
+        background-color: rgba(64, 64, 64, 0.6);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        text-align: center;
+    }
+
+    .practice a.practice_hover .caption {
+        display: block;
+    }
+
+.caption h2 {
+
+    color: transparent;
+    text-shadow: 0px 0px 1px #fff;
+    margin-bottom: 15px;
+    line-height: inherit;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.demo_content a {
+    display: block;
+    padding: 4px 0;
+    margin: 15px 0;
+    text-align: center;
+    color: transparent;
+    text-shadow: 0 0 1px #fff;
+    font-size: 24px;
+}
+
+    .demo_content a:hover {
+        border-radius: 5px;
+        box-shadow: rgb(64, 248, 172) 0px 0px 10px;
+    }
+
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.eot?t=1473669886'); /* IE9*/
+    src: url('iconfont.eot?t=1473669886#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff?t=1473669886') format('woff'), /* chrome, firefox */
+    url('iconfont.ttf?t=1473669886') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('iconfont.svg?t=1473669886#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 24px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 10px;
+}
+
+.icon-QQ:before {
+    content: "\e607";
+}
+
+.icon-dianhua:before {
+    content: "\e6d6";
+}
+
+.icon-email:before {
+    content: "\e62e";
+}
+
+
+.my_nav {
+    position: relative;
+}
+
+    .my_nav li {
+        font-size: 50px;
+    }
+
+        .my_nav li a {
+            white-space: nowrap;
+            color: transparent;
+            display: block;
+            text-align: center;
+            text-shadow: 0px 0px 4px #fff;
+            letter-spacing: 1px;
+            -moz-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+            -o-transform: scale(0.5);
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            -webkit-transition: all 0.6s linear;
+            -moz-transition: all 0.6s linear;
+            -o-transition: all 0.6s linear;
+            -ms-transition: all 0.6s linear;
+            transition: all 0.6s linear;
+        }
+
+    .my_nav:hover li a {
+        text-shadow: 0px 0px 15px #fff;
+    }
+
+    .my_nav li a:hover {
+        text-shadow: 0px 0px 1px #fff;
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+.mob_mav {
+    position: fixed;
+    background: #000;
+    width: 100%;
+    height: 45px;
+    min-width:320px;
+}
+
+
+
+    .mob_mav ul {
+        position: absolute;
+        top: 18px;
+        left: 3%;
+    }
+
+        .mob_mav ul li {
+            float: left;
+            margin-right: 13px;
+        }
+
+            .mob_mav ul li a {
+                color: transparent;
+                text-shadow: 0px 0px 1px #fff;
+                font-size: 16px;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+                .mob_mav ul li a:hover {
+                    color: rgb(127, 172, 227);
+                }

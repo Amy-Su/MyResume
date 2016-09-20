@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="jquery-1.7.2.js"></script>
+    <title></title>
+
+</head>
+<body>
+    
+
+    <div class="xianjian6">
+        <div class="xj_content">
+            <div class="change_img"></div>
+            <ul>
+                <li class="click_over">
+                    <a href="#"; class="pic1"></a>
+                </li>
+                <li>
+                    <a href="#"; class="pic2"></a>
+                </li>
+                <li>
+                    <a href="#"; class="pic3"></a>
+                </li>
+                <li class="show_right">
+                    <a href="#"; class="pic4"></a>
+                </li>
+                <li>
+                    <a href="#"; class="pic5"></a>
+                </li>
+                <li>
+                    <a href="#"; class="pic6"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <style>
+		*{    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #333;
+    font-family: "微软雅黑";}
+        .xianjian6 {
+            width: 100%;
+            background: url(images/xianjian6_back_big.jpg) no-repeat top center;
+        }
+
+        .xj_content {
+            margin: 0 auto;
+            position: relative;
+            width: 1000px;
+            height: 330px;
+        }
+
+            .xj_content ul {
+                position: absolute;
+                top: 10px;
+                left: 15px;
+            }
+
+            .xj_content li {
+                float: left;
+                list-style: none;
+            }
+
+            .xj_content .show_right {
+                margin-left: 500px;
+            }
+
+        .change_img {
+            width: 100%;
+            height: 100%;
+            background: url(images/xianjian6_big1.jpg) no-repeat top center;
+        }
+
+
+
+        .xj_content li a {
+            display: block;
+            width: 75px;
+            height: 185px;
+            background-image: url(images/xianjian6_figure_out.png);
+            background-repeat: no-repeat;
+        }
+
+        .pic1 {
+            background-position: -2px -3px;
+        }
+
+        .pic2 {
+            background-position: -81px -3px;
+        }
+
+        .pic3 {
+            background-position: -160px -3px;
+        }
+
+        .pic4 {
+            background-position: -239px -3px;
+        }
+
+        .pic5 {
+            background-position: -318px -3px;
+        }
+
+        .pic6 {
+            background-position: -397px -3px;
+        }
+
+        .xj_content .click_over a {
+            background-image: url(images/xianjian6_figure_over.png);
+        }
+    </style>
+     <script>
+        $(function () {
+            var back_url = ['url(images/xianjian6_big1.jpg)', 'url(images/xianjian6_big2.jpg)', 'url(images/xianjian6_big3.jpg)', 'url(images/xianjian6_big4.jpg)', 'url(images/xianjian6_big5.jpg)', 'url(images/xianjian6_big6.jpg)'];
+
+            var num = 1;//若赋值为0，自动轮播时第一张图会停止两倍的时间
+
+            //图片切换函数
+            function jumper(n) {
+                $('.xianjian6 li').eq(n).addClass('click_over').siblings().removeClass('click_over');//siblings获取所有同胞元素
+                $('.change_img').css('background', back_url[n]);//上面定义的数组放图片
+            }
+			 
+
+            //点击切换
+            $('.xianjian6 li').click(function () {
+                var i = $(this).index();
+                jumper(i);
+                num = i + 1;//改变全局变量的值，以便自动轮播能够衔接上
+            })
+            var carousel = setInterval(auto, 2000);
+            function auto() {
+                if (num == $('.xianjian6 li').length) { num = 0; }
+                jumper(num); num++;
+            }
+
+
+            $('.xianjian6 li').mouseover(function () {
+                clearInterval(carousel);//点击切换时，自动轮播暂停
+            });
+            $('.xianjian6 li').mouseout(function () {
+                carousel = setInterval(auto, 2000);//点击切换后，自动轮播继续
+            });
+        })
+    </script>
+</body>
+</html>
