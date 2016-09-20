@@ -207,10 +207,9 @@ span {
     }
 
 .caption h2 {
-
-    color: transparent;
+color: #000;
     text-shadow: 0px 0px 1px #fff;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     line-height: inherit;
 }
 
