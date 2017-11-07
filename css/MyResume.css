@@ -69,8 +69,8 @@ body, p, form, input, button, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: 'Century Gothic';
-   
+    /*font-family: 'Century Gothic';*/
+   font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 
